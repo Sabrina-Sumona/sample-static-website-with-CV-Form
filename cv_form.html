@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(127, 197, 255);
+        }
+
+        h1 {
+            background-color: rgb(39, 39, 83);
+            color: white;
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            text-align: left;
+            border: solid rgb(35, 51, 142) 25px;
+            background-color: rgb(103, 165, 235);
+            padding: 20px;
+            outline: solid rgb(94, 111, 212) 10px;
+        }
+
+        #done {
+            margin: 0;
+            position: absolute;
+            left: 60%;
+            color: white;
+            background-color: rgb(13, 13, 44);
+        }
+
+        input,
+        select,
+        textarea {
+            background-color: rgb(202, 226, 247);
+        }
+
+        input:hover,
+        select:hover,
+        textarea:hover {
+            background-color: rgb(104, 104, 104);
+            color: white;
+        }
+
+        ::placeholder {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <title>CV Form</title>
+</head>
+
+<body>
+    <h1>Curriculum Vitae</h1>
+    <form action="home.html" method="get">
+        <label for="user_name">Your name:</label>
+        <br>
+        <input id="user_name" type="text" autofocus minlength="3" maxlength="25" required>
+        <br>
+        <label for="father_name">Your fathers name:</label>
+        <br>
+        <input id="father_name" type="text" minlength="3" maxlength="25" required>
+        <br>
+        <label for="mother_name">Your mothers name:</label>
+        <br>
+        <input id="mother_name" type="text" minlength="3" maxlength="25" required>
+        <br>
+        <label for="address">Your address:</label>
+        <br>
+        <input type="text" list="mylist">
+        <datalist id="mylist">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Naogaon">Naogaon</option>\
+            <option value="Bogra">Bogra</option>
+            <option value="Joypurhat">Joypurhat</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Tangail">Tangail</option>
+            <option value="Sylet">Sylet</option>
+        </datalist>
+        <br>
+        <label for="mobile">Your contact number:<br>+880</label>
+        <input id="mobile" type="number" minlength="10" maxlength="10" required>
+        <br>
+        <label for="mail">Your email address:</label>
+        <br>
+        <input id="mail" type="email" minlength="7" maxlength="25" required>
+        <br>
+        <label for="gender">Enter your gender:</label>
+        <br>
+        <input id="male" name="gender" type="radio">Male
+        <input id="femal" name="gender" type="radio">Female
+        <br>
+        <label for="marriage">Enter your marital status:</label>
+        <br>
+        <input id="ma" name="marriage" type="radio">Married
+        <input id="uma" name="marriage" type="radio">Unmarried
+        <br>
+        <label for="birth_date">Enter your birth date:</label>
+        <br>
+        <select name="date" id="date" class="birth_date">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select name="month" id="month" class="birth_date">
+            <option value="jan">jan</option>
+            <option value="feb">feb</option>
+            <option value="mar">mar</option>
+            <option value="apr">apr</option>
+            <option value="may">may</option>
+            <option value="jun">jun</option>
+            <option value="jul">jul</option>
+            <option value="aug">aug</option>
+            <option value="sep">sep</option>
+            <option value="oct">oct</option>
+            <option value="nov">nov</option>
+            <option value="dec">dec</option>
+        </select>
+        <select name="year" id="year" class="birth_date">
+            <option value="2002">2002</option>
+            <option value="2001">2001</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+        </select>
+        <br>
+        <label for="bsc">BSC:</label>
+        <br>
+        <select name="grade" id="grade" class="bsc">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+        <select name="year" id="year" class="bsc">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+        <select name="dept" id="dept" class="bsc">
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="ICE">ICE</option>
+            <option value="ICE">Civil</option>
+            <option value="ICE">Mechanical</option>
+        </select>
+        <select name="varsity" id="varsity" class="bsc">
+            <option value="DU">DU</option>
+            <option value="BUET">BUET</option>
+            <option value="Daffodil">Daffodil</option>
+            <option value="CU">CU</option>
+            <option value="UAP">UAP</option>
+            <option value="BAUET">BAUET</option>
+        </select>
+        <br>
+        <label for="hsc">HSC:</label>
+        <br>
+        <select name="grade" id="grade" class="hsc">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+        <select name="year" id="year" class="hsc">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+        <select name="board" id="board" class="hsc">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Comilla">Comilla</option>
+            <option value="Jessore">Jessore</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Dinajpur">Dinajpur</option>
+        </select>
+        <br>
+        <label for="ssc">SSC:</label>
+        <br>
+        <select name="grade" id="grade" class="ssc">
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="F">F</option>
+        </select>
+        <select name="year" id="year" class="ssc">
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+            <option value="2016">2016</option>
+            <option value="2015">2015</option>
+            <option value="2014">2014</option>
+            <option value="2013">2013</option>
+            <option value="2012">2012</option>
+        </select>
+        <select name="board" id="board" class="ssc">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Chittagong">Chittagong</option>
+            <option value="Barisal">Barisal</option>
+            <option value="Comilla">Comilla</option>
+            <option value="Jessore">Jessore</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Sylhet">Sylhet</option>
+            <option value="Dinajpur">Dinajpur</option>
+        </select>
+        <br>
+        Previous Working Experiences:
+        <br>
+        <textarea name="ta" id="ta" cols="30" rows="10"
+            placeholder="Please enter your previous working experiences.."></textarea>
+        <br>
+        <label for="hobby">Enter your hobbies:</label>
+        <br>
+        <input id="hb1" name="hob1" type="checkbox">Reading books
+        <br>
+        <input id="hb2" name="hob2" type="checkbox">Listening music
+        <br>
+        <input id="hb3" name="hob3" type="checkbox">Gardening
+        <br>
+        <input id="hb4" name="hob4" type="checkbox">Watching movie
+        <br>
+        <label for="img">Enter your passport size photo:</label>
+        <br>
+        <input id="img" name="img" type="file">
+        <br>
+        <label for="reli">Enter your religion:</label>
+        <br>
+        <input type="text" list="mylist">
+        <datalist id="mylist">
+            <option value="Islam">Islam</option>
+            <option value="Hinduism">Hinduism</option>
+            <option value="Buddhists">Buddhists</option>
+            <option value="Christians">Christians</option>\
+            <option value="Others">Others</option>
+        </datalist>
+        <br>
+        Comment section:
+        <br>
+        <textarea name="ta" id="ta" cols="30" rows="10" placeholder="Please enter your comment.."></textarea>
+        <br>
+        <button type="submit" id="done">Ok</button>
+        <br>
+    </form>
+    <br>
+    <div style="text-align: center; position: relative;;">
+        <a href="home.html" style="display: inline-block; width: 20%; border: solid black; text-align: center;">Home</a>
+    </div>
+</body>
+
+</html>
